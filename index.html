@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website</title>
+  <title>Home | About | Avocation | Experience | Contact</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome CDN -->
@@ -245,16 +245,15 @@
   </div>
   <!-- Header -->
   <header class="fixed w-full z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
-    <nav class="container mx-auto flex items-center justify-between py-3 px-4 md:px-0">
-      <a href="#home" class="text-2xl font-bold text-blue-600 mx-auto">Stanley Li</a>
-      <ul class="hidden md:flex space-x-8 text-lg">
+    <nav class="container mx-auto flex flex-col items-center justify-center py-3 px-4 md:px-0">
+      <ul class="flex space-x-8 text-lg justify-center w-full">
         <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
         <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
         <li><a href="#avocation" class="hover:text-blue-600 transition">Avocation</a></li>
         <li><a href="#experience" class="hover:text-blue-600 transition">Experience</a></li>
         <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-4 mt-2">
         <button id="theme-toggle" aria-label="Toggle theme" class="btn text-xl p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -265,7 +264,7 @@
     </nav>
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 pb-4">
-      <ul class="flex flex-col space-y-2 text-lg">
+      <ul class="flex flex-col space-y-2 text-lg items-center">
         <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
         <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
         <li><a href="#avocation" class="hover:text-blue-600 transition">Avocation</a></li>
@@ -306,11 +305,11 @@
         <div class="w-full flex flex-col items-center">
           <div class="education-list flex flex-col items-center">
             <div class="flex items-center mb-4">
-              <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/National_University_of_Singapore_coat_of_arms.svg" alt="NUS Logo">
+              <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/NUS_coat_of_arms.svg/800px-NUS_coat_of_arms.svg.png" alt="NUS Logo">
               <span>National University of Singapore<br><b>Master in Intelligent System</b></span>
             </div>
             <div class="flex items-center">
-              <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/ECNU_logo.png" alt="ECNU Logo">
+              <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/East_China_Normal_University_logo.svg/270px-East_China_Normal_University_logo.svg.png" alt="ECNU Logo">
               <span>East China Normal University<br><b>Bachelor in Software Engineering</b></span>
             </div>
           </div>
@@ -327,19 +326,19 @@
       <h2 class="section-title text-blue-600">Avocation</h2>
       <div class="avocation-grid">
         <div class="avocation-card">
-          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80" alt="Music">
+          <img src="https://yt3.googleusercontent.com/88A8LNYmzNpjXeuHCAN2pK496G418wTT2CR2Qv5FGFoBPV-MKaRg7B-NeNVMlF0XHoW2AgAI_g=s900-c-k-c0x00ffffff-no-rj" alt="Music" style="object-fit:cover;width:100px;height:100px;">
           <span>Music</span>
         </div>
         <div class="avocation-card">
-          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Messi">
+          <img src="https://fifpro.org/media/ovzgbezo/messi_w11_2024.jpg?width=1000&height=640&rnd=133781565917900000" alt="Messi" style="object-fit:cover;width:100px;height:100px;">
           <span>Messi</span>
         </div>
         <div class="avocation-card">
-          <img src="https://pngarts.com/files/3/Reading-Book-PNG-Image.png" alt="Reading">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hermann_Hesse_2.jpg/500px-Hermann_Hesse_2.jpg" alt="Reading" style="object-fit:cover;width:100px;height:100px;">
           <span>Reading</span>
         </div>
         <div class="avocation-card">
-          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80" alt="Tennis">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Novak_Djokovic_-_2009_US_Open.jpg" alt="Tennis" style="object-fit:cover;width:100px;height:100px;">
           <span>Tennis</span>
         </div>
       </div>
@@ -351,14 +350,14 @@
       <h2 class="section-title text-blue-600">Experience</h2>
       <div class="experience-list">
         <div class="experience-item">
-          <img class="experience-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/China_Telecom_logo.svg" alt="China Telecom Logo">
+          <img class="experience-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/China_Telecom_Logo.svg/500px-China_Telecom_Logo.svg.png" alt="China Telecom Logo">
           <div class="experience-info">
             <span class="experience-company">China Telecom Corporation Limited</span>
             <span class="experience-role">AI Product Manager</span>
           </div>
         </div>
         <div class="experience-item">
-          <img class="experience-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP-Logo.svg" alt="SAP Logo">
+          <img class="experience-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/330px-SAP_2011_logo.svg.png" alt="SAP Logo">
           <div class="experience-info">
             <span class="experience-company">SAP China Lab</span>
             <span class="experience-role">Product Manager intern | SuccessFactors</span>
@@ -378,7 +377,7 @@
         </div>
         <div class="contact-item">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" style="width:32px;height:32px;">
-          <a href="https://www.linkedin.com/" target="_blank" class="text-lg hover:underline">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/stanley-liyuheng/" target="_blank" class="text-lg hover:underline">LinkedIn</a>
         </div>
       </div>
     </div>
