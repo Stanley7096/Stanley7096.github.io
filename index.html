@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stanley Li | Personal Website</title>
+  <title>Personal Website</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome CDN -->
@@ -23,6 +23,8 @@
       color: #18181b;
       transition: background 0.4s cubic-bezier(.4,0,.2,1), color 0.4s cubic-bezier(.4,0,.2,1);
       overflow-x: hidden;
+      letter-spacing: 0.03em;
+      line-height: 1.7;
     }
     .theme-dark {
       background: #18181b;
@@ -116,6 +118,123 @@
         background-attachment: scroll;
       }
     }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+    .education-list {
+      font-size: 1.25rem;
+      line-height: 2.2;
+      letter-spacing: 0.04em;
+      margin-bottom: 2rem;
+    }
+    .education-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin-right: 1rem;
+      vertical-align: middle;
+    }
+    .avocation-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+      margin-top: 2rem;
+    }
+    .avocation-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px 0 rgba(60,60,60,0.08);
+      overflow: hidden;
+      text-align: center;
+      padding: 1.5rem 1rem 1rem 1rem;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .avocation-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    .avocation-card span {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2563eb;
+    }
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .experience-item {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px 0 rgba(60,60,60,0.08);
+      padding: 1.5rem 2rem;
+      min-width: 320px;
+    }
+    .experience-logo {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #f3f4f6;
+      padding: 6px;
+    }
+    .experience-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .experience-company {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .experience-role {
+      font-size: 1rem;
+      color: #64748b;
+    }
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      align-items: flex-start;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.1rem;
+    }
+    .contact-item i, .contact-item img {
+      font-size: 2rem;
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+    @media (max-width: 600px) {
+      .section-title { font-size: 2rem; }
+      .education-list { font-size: 1rem; }
+      .experience-item { flex-direction: column; align-items: flex-start; min-width: 0; padding: 1rem; }
+      .experience-logo { margin-bottom: 0.5rem; }
+    }
   </style>
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f468-200d-1f4bb.png">
 </head>
@@ -181,75 +300,85 @@
   </section>
   <!-- About Me -->
   <section id="about" class="py-24 md:py-32 bg-white dark:bg-gray-900 fade-in">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">About Me</h2>
-      <div class="flex flex-col md:flex-row gap-16 items-center">
-        <div class="flex-1">
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">Hello! My name is Stanley Li. I am passionate about intelligent systems, product management, and building innovative digital solutions. I have experience in AI product management and software engineering, and I enjoy collaborating with cross-functional teams to deliver impactful products.</p>
-          <ul class="mb-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li><strong>Education:</strong></li>
-            <li>National University of Singapore<br>Master in Intelligent System</li>
-            <li>East China Normal University<br>Bachelor in Software Engineering</li>
-          </ul>
-          <ul class="mb-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li><strong>Work Experience:</strong></li>
-            <li>China Telecom Corporation Limited<br>AI Product Manager</li>
-            <li>SAP China Lab<br>Product Manager intern | SuccessFactors</li>
-          </ul>
+    <div class="container">
+      <h2 class="section-title text-blue-600">About Me</h2>
+      <div class="flex flex-col items-center gap-10">
+        <div class="w-full flex flex-col items-center">
+          <div class="education-list flex flex-col items-center">
+            <div class="flex items-center mb-4">
+              <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/National_University_of_Singapore_coat_of_arms.svg" alt="NUS Logo">
+              <span>National University of Singapore<br><b>Master in Intelligent System</b></span>
+            </div>
+            <div class="flex items-center">
+              <img class="education-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/ECNU_logo.png" alt="ECNU Logo">
+              <span>East China Normal University<br><b>Bachelor in Software Engineering</b></span>
+            </div>
+          </div>
         </div>
-        <div class="flex-1 flex items-center justify-center">
-          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="About Me Image" class="rounded-xl shadow-2xl w-full max-w-xs object-cover animate-element" loading="lazy">
+        <div class="w-full max-w-2xl text-center text-lg text-gray-700 dark:text-gray-300" style="letter-spacing:0.04em;line-height:2.1;">
+          Hi! I'm Stanley Li. I am passionate about intelligent systems, product management, and building innovative digital solutions. I enjoy collaborating with cross-functional teams to deliver impactful products.
         </div>
       </div>
     </div>
   </section>
   <!-- Avocation -->
   <section id="avocation" class="py-24 md:py-32 bg-gray-50 dark:bg-gray-800 fade-in">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">Avocation</h2>
-      <div class="flex flex-col items-center">
-        <ul class="text-lg text-gray-700 dark:text-gray-300 space-y-2">
-          <li>Music</li>
-          <li>Messi</li>
-          <li>Reading</li>
-          <li>Tennis</li>
-        </ul>
+    <div class="container">
+      <h2 class="section-title text-blue-600">Avocation</h2>
+      <div class="avocation-grid">
+        <div class="avocation-card">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80" alt="Music">
+          <span>Music</span>
+        </div>
+        <div class="avocation-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Messi">
+          <span>Messi</span>
+        </div>
+        <div class="avocation-card">
+          <img src="https://pngarts.com/files/3/Reading-Book-PNG-Image.png" alt="Reading">
+          <span>Reading</span>
+        </div>
+        <div class="avocation-card">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=400&q=80" alt="Tennis">
+          <span>Tennis</span>
+        </div>
       </div>
     </div>
   </section>
-  <!-- Experience (Projects) -->
+  <!-- Experience -->
   <section id="experience" class="py-24 md:py-32 bg-white dark:bg-gray-900 fade-in">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">Experience</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col animate-element">
-          <h3 class="font-semibold text-xl mb-2">China Telecom Corporation Limited</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-2">AI Product Manager</p>
+    <div class="container">
+      <h2 class="section-title text-blue-600">Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <img class="experience-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/China_Telecom_logo.svg" alt="China Telecom Logo">
+          <div class="experience-info">
+            <span class="experience-company">China Telecom Corporation Limited</span>
+            <span class="experience-role">AI Product Manager</span>
+          </div>
         </div>
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col animate-element">
-          <h3 class="font-semibold text-xl mb-2">SAP China Lab</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-2">Product Manager intern | SuccessFactors</p>
+        <div class="experience-item">
+          <img class="experience-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP-Logo.svg" alt="SAP Logo">
+          <div class="experience-info">
+            <span class="experience-company">SAP China Lab</span>
+            <span class="experience-role">Product Manager intern | SuccessFactors</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!-- Contact -->
   <section id="contact" class="py-24 md:py-32 bg-gray-50 dark:bg-gray-800 fade-in">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">Contact</h2>
-      <div class="flex flex-col md:flex-row gap-16 items-center">
-        <div class="flex-1 flex flex-col space-y-6">
-          <div class="flex items-center space-x-4">
-            <i class="fa-solid fa-envelope text-2xl text-blue-600"></i>
-            <span class="text-lg">stanleyli7096@gmail.com</span>
-          </div>
-          <div class="flex items-center space-x-4">
-            <i class="fab fa-github text-2xl text-blue-600"></i>
-            <a href="https://github.com/" target="_blank" class="text-lg hover:underline">GitHub</a>
-          </div>
+    <div class="container">
+      <h2 class="section-title text-blue-600">Contact</h2>
+      <div class="contact-list">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope text-blue-600"></i>
+          <span class="text-lg">stanleyli7096@gmail.com</span>
         </div>
-        <div class="flex-1 flex items-center justify-center">
-          <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Contact Image" class="rounded-xl shadow-2xl w-full max-w-xs object-cover animate-element" loading="lazy">
+        <div class="contact-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" style="width:32px;height:32px;">
+          <a href="https://www.linkedin.com/" target="_blank" class="text-lg hover:underline">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -266,30 +395,30 @@
         document.getElementById('loading').classList.add('hide');
       }, 900);
     });
-    // 主题切换
-    const themeToggle = document.getElementById('theme-toggle');
-    const htmlEl = document.documentElement;
-    function setTheme(dark) {
-      if (dark) {
-        htmlEl.classList.add('theme-dark');
-        localStorage.setItem('theme', 'dark');
-        themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-      } else {
-        htmlEl.classList.remove('theme-dark');
-        localStorage.setItem('theme', 'light');
-        themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    // 亮暗模式切换修复
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlEl = document.documentElement;
+      function setTheme(dark) {
+        if (dark) {
+          htmlEl.classList.add('theme-dark');
+          localStorage.setItem('theme', 'dark');
+          themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        } else {
+          htmlEl.classList.remove('theme-dark');
+          localStorage.setItem('theme', 'light');
+          themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        }
       }
-    }
-    (function() {
       const userTheme = localStorage.getItem('theme');
       if (userTheme === 'dark' || (userTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         setTheme(true);
       } else {
         setTheme(false);
       }
-    })();
-    themeToggle.addEventListener('click', () => {
-      setTheme(!htmlEl.classList.contains('theme-dark'));
+      themeToggle.addEventListener('click', function() {
+        setTheme(!htmlEl.classList.contains('theme-dark'));
+      });
     });
     // 移动端菜单
     const menuToggle = document.getElementById('menu-toggle');
