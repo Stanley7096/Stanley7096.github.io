@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>张小明 | 个人主页</title>
+  <title>Stanley Li | Personal Website</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome CDN -->
@@ -127,16 +127,16 @@
   <!-- Header -->
   <header class="fixed w-full z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
     <nav class="container mx-auto flex items-center justify-between py-3 px-4 md:px-0">
-      <a href="#home" class="text-2xl font-bold text-blue-600">张小明</a>
+      <a href="#home" class="text-2xl font-bold text-blue-600 mx-auto">Stanley Li</a>
       <ul class="hidden md:flex space-x-8 text-lg">
-        <li><a href="#home" class="hover:text-blue-600 transition">首页</a></li>
-        <li><a href="#about" class="hover:text-blue-600 transition">关于我</a></li>
-        <li><a href="#skills" class="hover:text-blue-600 transition">技能</a></li>
-        <li><a href="#projects" class="hover:text-blue-600 transition">项目</a></li>
-        <li><a href="#contact" class="hover:text-blue-600 transition">联系</a></li>
+        <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="#avocation" class="hover:text-blue-600 transition">Avocation</a></li>
+        <li><a href="#experience" class="hover:text-blue-600 transition">Experience</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
       <div class="flex items-center space-x-4">
-        <button id="theme-toggle" aria-label="切换主题" class="btn text-xl p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+        <button id="theme-toggle" aria-label="Toggle theme" class="btn text-xl p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition">
           <i class="fa-solid fa-moon"></i>
         </button>
         <button id="menu-toggle" class="btn md:hidden text-2xl p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition">
@@ -147,11 +147,11 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 px-4 pb-4">
       <ul class="flex flex-col space-y-2 text-lg">
-        <li><a href="#home" class="hover:text-blue-600 transition">首页</a></li>
-        <li><a href="#about" class="hover:text-blue-600 transition">关于我</a></li>
-        <li><a href="#skills" class="hover:text-blue-600 transition">技能</a></li>
-        <li><a href="#projects" class="hover:text-blue-600 transition">项目</a></li>
-        <li><a href="#contact" class="hover:text-blue-600 transition">联系</a></li>
+        <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="#avocation" class="hover:text-blue-600 transition">Avocation</a></li>
+        <li><a href="#experience" class="hover:text-blue-600 transition">Experience</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -159,22 +159,21 @@
   <section id="home" class="pt-32 md:pt-40 pb-20 bg-gradient-to-b from-white via-blue-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-[90vh] flex items-center parallax-bg">
     <div class="container mx-auto flex flex-col md:flex-row items-center gap-16 px-4">
       <div class="flex-1 flex flex-col items-start fade-in">
-        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 dark:text-white drop-shadow">你好，我是 <span class="text-blue-600">张小明</span></h1>
-        <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-700 dark:text-gray-300">前端开发工程师</h2>
-        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-xl leading-relaxed">热爱前端技术，专注于打造高质量、用户体验优异的Web应用。擅长React、Vue、Node.js等现代技术栈，追求极致的代码与设计。</p>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 dark:text-white drop-shadow">Hi, I'm <span class="text-blue-600">Stanley Li</span></h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-700 dark:text-gray-300">AI Product Manager</h2>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-xl leading-relaxed">Passionate about intelligent systems, product management, and creating impactful digital experiences. Experienced in AI, software engineering, and cross-functional collaboration.</p>
         <div class="flex items-center space-x-6 mb-8">
-          <a href="#projects" class="btn px-8 py-3 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">查看作品</a>
-          <a href="#contact" class="btn px-8 py-3 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 dark:hover:bg-gray-800 transition">联系我</a>
+          <a href="#experience" class="btn px-8 py-3 bg-blue-600 text-white rounded shadow hover:bg-blue-700 transition">View Experience</a>
+          <a href="#contact" class="btn px-8 py-3 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 dark:hover:bg-gray-800 transition">Contact Me</a>
         </div>
         <div class="flex space-x-6 text-2xl text-blue-600">
           <a href="https://github.com/" target="_blank" aria-label="GitHub" class="hoverable"><i class="fab fa-github"></i></a>
-          <a href="https://dribbble.com/" target="_blank" aria-label="Dribbble" class="hoverable"><i class="fab fa-dribbble"></i></a>
-          <a href="mailto:xiaoming.zhang@email.com" aria-label="Email" class="hoverable"><i class="fa-solid fa-envelope"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email" class="hoverable"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
       <div class="flex-1 flex justify-center fade-in">
         <div class="relative group">
-          <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&q=80" alt="张小明头像" class="w-56 h-56 md:w-64 md:h-64 rounded-full shadow-2xl object-cover border-4 border-blue-100 dark:border-gray-700 animate-element" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&q=80" alt="Stanley Li Avatar" class="w-56 h-56 md:w-64 md:h-64 rounded-full shadow-2xl object-cover border-4 border-blue-100 dark:border-gray-700 animate-element" loading="lazy">
           <div class="absolute inset-0 rounded-full ring-4 ring-blue-200 dark:ring-blue-900 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none"></div>
         </div>
       </div>
@@ -183,142 +182,53 @@
   <!-- About Me -->
   <section id="about" class="py-24 md:py-32 bg-white dark:bg-gray-900 fade-in">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">关于我</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">About Me</h2>
       <div class="flex flex-col md:flex-row gap-16 items-center">
         <div class="flex-1">
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">你好，我叫张小明，是一名热爱前端开发的工程师。拥有5年Web开发经验，熟悉多种主流前端框架和工具，注重代码质量与团队协作。喜欢钻研新技术，乐于分享和学习。</p>
+          <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">Hello! My name is Stanley Li. I am passionate about intelligent systems, product management, and building innovative digital solutions. I have experience in AI product management and software engineering, and I enjoy collaborating with cross-functional teams to deliver impactful products.</p>
           <ul class="mb-6 text-gray-700 dark:text-gray-300 space-y-2">
-            <li><strong>教育背景：</strong> 2014-2018 本科，计算机科学与技术，清华大学</li>
-            <li><strong>工作经历：</strong> 2018-2020 字节跳动 前端开发工程师<br>2020-至今 腾讯 高级前端开发工程师</li>
+            <li><strong>Education:</strong></li>
+            <li>National University of Singapore<br>Master in Intelligent System</li>
+            <li>East China Normal University<br>Bachelor in Software Engineering</li>
           </ul>
-          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">擅长将复杂需求转化为优雅的界面和流畅的用户体验，追求极致的细节和性能优化。</p>
+          <ul class="mb-6 text-gray-700 dark:text-gray-300 space-y-2">
+            <li><strong>Work Experience:</strong></li>
+            <li>China Telecom Corporation Limited<br>AI Product Manager</li>
+            <li>SAP China Lab<br>Product Manager intern | SuccessFactors</li>
+          </ul>
         </div>
         <div class="flex-1 flex items-center justify-center">
-          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="关于我图片" class="rounded-xl shadow-2xl w-full max-w-xs object-cover animate-element" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="About Me Image" class="rounded-xl shadow-2xl w-full max-w-xs object-cover animate-element" loading="lazy">
         </div>
       </div>
     </div>
   </section>
-  <!-- Skills -->
-  <section id="skills" class="py-24 md:py-32 bg-gray-50 dark:bg-gray-800 fade-in">
+  <!-- Avocation -->
+  <section id="avocation" class="py-24 md:py-32 bg-gray-50 dark:bg-gray-800 fade-in">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">技能</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center animate-element">
-          <i class="fab fa-react text-5xl text-blue-500 mb-4"></i>
-          <h3 class="font-semibold text-xl mb-2">React</h3>
-          <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
-            <div class="progress-bar bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
-          </div>
-          <span class="text-gray-500">精通</span>
-        </div>
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center animate-element">
-          <i class="fab fa-vuejs text-5xl text-green-500 mb-4"></i>
-          <h3 class="font-semibold text-xl mb-2">Vue.js</h3>
-          <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
-            <div class="progress-bar bg-green-500 h-3 rounded-full" style="width: 85%"></div>
-          </div>
-          <span class="text-gray-500">精通</span>
-        </div>
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center animate-element">
-          <i class="fab fa-node-js text-5xl text-green-600 mb-4"></i>
-          <h3 class="font-semibold text-xl mb-2">Node.js</h3>
-          <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
-            <div class="progress-bar bg-green-600 h-3 rounded-full" style="width: 80%"></div>
-          </div>
-          <span class="text-gray-500">熟练</span>
-        </div>
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center animate-element">
-          <i class="fab fa-js-square text-5xl text-yellow-400 mb-4"></i>
-          <h3 class="font-semibold text-xl mb-2">JavaScript</h3>
-          <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
-            <div class="progress-bar bg-yellow-400 h-3 rounded-full" style="width: 95%"></div>
-          </div>
-          <span class="text-gray-500">精通</span>
-        </div>
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center animate-element">
-          <i class="fab fa-html5 text-5xl text-orange-500 mb-4"></i>
-          <h3 class="font-semibold text-xl mb-2">HTML5</h3>
-          <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
-            <div class="progress-bar bg-orange-500 h-3 rounded-full" style="width: 95%"></div>
-          </div>
-          <span class="text-gray-500">精通</span>
-        </div>
-        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center animate-element">
-          <i class="fab fa-css3-alt text-5xl text-blue-400 mb-4"></i>
-          <h3 class="font-semibold text-xl mb-2">CSS3</h3>
-          <div class="w-full bg-gray-200 rounded-full h-3 mb-2">
-            <div class="progress-bar bg-blue-400 h-3 rounded-full" style="width: 90%"></div>
-          </div>
-          <span class="text-gray-500">精通</span>
-        </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">Avocation</h2>
+      <div class="flex flex-col items-center">
+        <ul class="text-lg text-gray-700 dark:text-gray-300 space-y-2">
+          <li>Music</li>
+          <li>Messi</li>
+          <li>Reading</li>
+          <li>Tennis</li>
+        </ul>
       </div>
     </div>
   </section>
-  <!-- Projects -->
-  <section id="projects" class="py-24 md:py-32 bg-white dark:bg-gray-900 fade-in">
+  <!-- Experience (Projects) -->
+  <section id="experience" class="py-24 md:py-32 bg-white dark:bg-gray-900 fade-in">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">项目作品</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <!-- Project Card 1 -->
-        <div class="card group p-6 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform transform hover:-translate-y-2 hover:shadow-xl cursor-pointer relative overflow-hidden animate-element">
-          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="项目1" class="rounded-lg mb-4 w-full h-44 object-cover transition-transform group-hover:scale-105" loading="lazy">
-          <h3 class="font-semibold text-xl mb-2">智能任务管理平台</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-2">基于React和Node.js开发的高效任务管理工具，支持团队协作与实时同步。</p>
-          <button class="btn text-blue-600 hover:underline mt-2" onclick="showProjectDetail(1)">查看详情</button>
-          <!-- Detail Modal -->
-          <div id="project-modal-1" class="hidden fixed inset-0 z-50 bg-black/40 flex items-center justify-center">
-            <div class="bg-white dark:bg-gray-900 rounded-xl p-8 max-w-lg w-full shadow-lg relative">
-              <button class="absolute top-4 right-4 text-gray-500 hover:text-blue-600 text-2xl btn" onclick="closeProjectDetail(1)"><i class="fa-solid fa-xmark"></i></button>
-              <h3 class="text-2xl font-bold mb-4">智能任务管理平台</h3>
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="项目1" class="rounded-lg mb-4 w-full h-40 object-cover">
-              <p class="text-gray-700 dark:text-gray-300 mb-2">该平台集成了任务分配、进度跟踪、团队协作等功能，提升了团队的工作效率。采用前后端分离架构，支持多终端访问。</p>
-              <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 mb-2">
-                <li>技术栈：React, Node.js, MongoDB</li>
-                <li>亮点：实时同步、权限管理、响应式设计</li>
-              </ul>
-            </div>
-          </div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col animate-element">
+          <h3 class="font-semibold text-xl mb-2">China Telecom Corporation Limited</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-2">AI Product Manager</p>
         </div>
-        <!-- Project Card 2 -->
-        <div class="card group p-6 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform transform hover:-translate-y-2 hover:shadow-xl cursor-pointer relative overflow-hidden animate-element">
-          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="项目2" class="rounded-lg mb-4 w-full h-44 object-cover transition-transform group-hover:scale-105" loading="lazy">
-          <h3 class="font-semibold text-xl mb-2">在线简历生成器</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-2">一站式在线简历制作平台，支持多模板切换与导出PDF。</p>
-          <button class="btn text-blue-600 hover:underline mt-2" onclick="showProjectDetail(2)">查看详情</button>
-          <!-- Detail Modal -->
-          <div id="project-modal-2" class="hidden fixed inset-0 z-50 bg-black/40 flex items-center justify-center">
-            <div class="bg-white dark:bg-gray-900 rounded-xl p-8 max-w-lg w-full shadow-lg relative">
-              <button class="absolute top-4 right-4 text-gray-500 hover:text-blue-600 text-2xl btn" onclick="closeProjectDetail(2)"><i class="fa-solid fa-xmark"></i></button>
-              <h3 class="text-2xl font-bold mb-4">在线简历生成器</h3>
-              <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="项目2" class="rounded-lg mb-4 w-full h-40 object-cover">
-              <p class="text-gray-700 dark:text-gray-300 mb-2">该平台为用户提供多种简历模板，支持在线编辑与一键导出PDF，提升求职效率。</p>
-              <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 mb-2">
-                <li>技术栈：Vue.js, Express, MySQL</li>
-                <li>亮点：模板丰富、导出PDF、用户管理</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="card group p-6 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 transition-transform transform hover:-translate-y-2 hover:shadow-xl cursor-pointer relative overflow-hidden animate-element">
-          <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=600&q=80" alt="项目3" class="rounded-lg mb-4 w-full h-44 object-cover transition-transform group-hover:scale-105" loading="lazy">
-          <h3 class="font-semibold text-xl mb-2">个人博客系统</h3>
-          <p class="text-gray-700 dark:text-gray-300 mb-2">支持Markdown编辑与多主题切换的博客平台。</p>
-          <button class="btn text-blue-600 hover:underline mt-2" onclick="showProjectDetail(3)">查看详情</button>
-          <!-- Detail Modal -->
-          <div id="project-modal-3" class="hidden fixed inset-0 z-50 bg-black/40 flex items-center justify-center">
-            <div class="bg-white dark:bg-gray-900 rounded-xl p-8 max-w-lg w-full shadow-lg relative">
-              <button class="absolute top-4 right-4 text-gray-500 hover:text-blue-600 text-2xl btn" onclick="closeProjectDetail(3)"><i class="fa-solid fa-xmark"></i></button>
-              <h3 class="text-2xl font-bold mb-4">个人博客系统</h3>
-              <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=600&q=80" alt="项目3" class="rounded-lg mb-4 w-full h-40 object-cover">
-              <p class="text-gray-700 dark:text-gray-300 mb-2">该博客系统支持Markdown编辑、标签分类、评论系统，并可切换多种主题，适合技术分享与个人成长记录。</p>
-              <ul class="list-disc pl-5 text-gray-700 dark:text-gray-300 mb-2">
-                <li>技术栈：Node.js, Vue.js, MongoDB</li>
-                <li>亮点：Markdown支持、多主题、评论系统</li>
-              </ul>
-            </div>
-          </div>
+        <div class="card p-8 bg-white dark:bg-gray-900 rounded-xl shadow border border-gray-200 dark:border-gray-700 flex flex-col animate-element">
+          <h3 class="font-semibold text-xl mb-2">SAP China Lab</h3>
+          <p class="text-gray-700 dark:text-gray-300 mb-2">Product Manager intern | SuccessFactors</p>
         </div>
       </div>
     </div>
@@ -326,31 +236,27 @@
   <!-- Contact -->
   <section id="contact" class="py-24 md:py-32 bg-gray-50 dark:bg-gray-800 fade-in">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">联系方式</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-blue-600">Contact</h2>
       <div class="flex flex-col md:flex-row gap-16 items-center">
         <div class="flex-1 flex flex-col space-y-6">
           <div class="flex items-center space-x-4">
             <i class="fa-solid fa-envelope text-2xl text-blue-600"></i>
-            <span class="text-lg">xiaoming.zhang@email.com</span>
+            <span class="text-lg">stanleyli7096@gmail.com</span>
           </div>
           <div class="flex items-center space-x-4">
             <i class="fab fa-github text-2xl text-blue-600"></i>
             <a href="https://github.com/" target="_blank" class="text-lg hover:underline">GitHub</a>
           </div>
-          <div class="flex items-center space-x-4">
-            <i class="fab fa-dribbble text-2xl text-blue-600"></i>
-            <a href="https://dribbble.com/" target="_blank" class="text-lg hover:underline">Dribbble</a>
-          </div>
         </div>
         <div class="flex-1 flex items-center justify-center">
-          <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="联系图片" class="rounded-xl shadow-2xl w-full max-w-xs object-cover animate-element" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Contact Image" class="rounded-xl shadow-2xl w-full max-w-xs object-cover animate-element" loading="lazy">
         </div>
       </div>
     </div>
   </section>
   <!-- Footer -->
   <footer class="py-8 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 text-center text-gray-500 text-sm fade-in">
-    <div>© 2024 张小明. 保留所有权利. | 粤ICP备2024000000号</div>
+    <div>© 2024 Stanley Li. All rights reserved.</div>
   </footer>
   <!-- JS: 交互与动画增强 -->
   <script>
